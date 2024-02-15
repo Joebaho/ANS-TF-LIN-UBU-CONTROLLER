@@ -47,7 +47,6 @@
 
 - name: Setting up apache webserver on ubuntu nodes
   hosts: ubuntu-nodes
-  vars:
   handlers:
     - name: restarting apache2
       ansible.builtin.service:
